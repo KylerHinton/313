@@ -1,0 +1,67 @@
+
+#div1
+{
+color:00FFCC;
+border:10px solid;
+text-align:center;
+width:960px;
+margin:auto
+}
+#div2
+{
+text-align:left;
+background-color:orange;
+border:15px solid;
+width:300px;
+font-family:fantasy;
+margin: auto 10%;
+position:fixed;
+top:30px;
+left:-65px;
+}
+h1.center
+{
+text-align:center
+}
+a:link {color:blue;}      /* unvisited link */
+a:visited {color:blue;}  /* visited link */
+a:hover {color:orange;}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */ 
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+#style1
+{
+color:orange;
+border:10px solid;
+text-align:center;
+width:960px;
+margin:auto
+
+}
+#style2
+{
+font-family:fantasy;
+color:orange;
+text-align:center;
+font-size:50px;
+font-family:"Palatino Linotype";
+}
+#style3
+{
+text-align:center;
+}
+.center
+{
+text-align:center;
+} 
+.right
+{
+text-align:right;
+}
+.left
+{
+text-align:left;
+}
