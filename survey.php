@@ -46,7 +46,7 @@ echo "Views=". $_SESSION['game3'];*/
 echo "The most popular types of games are:";
 ?><br/>
 <?php
-echo "Side Scroller: ". $_SESSION['game'];
+echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['Side Scroller'];
 ?><br/>
 <?php
 echo "MMORPG: ". $_SESSION['game'];
