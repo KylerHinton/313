@@ -12,7 +12,7 @@ else {
 
 }*/
 // store session data
-$_SESSION['game'];//$_REQUEST['game'];
+$_SESSION['game'] = $_REQUEST['game'];
 /*$_SESSION['game1'] = 0;
 $_SESSION['game2'] = 0;
 $_SESSION['game3'] = 0;
@@ -45,9 +45,8 @@ echo "Views=". $_SESSION['game3'];*/
 //retrieve session data
 echo "The most popular types of games are:";
 ?><br/>
-$game = (isset($_POST['game']) ? $_POST['game'] : null);
 <?php
-echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['Side Scroller'];
+echo "Side Scroller: ". $_SESSION['game'];
 ?><br/>
 <?php
 echo "MMORPG: ". $_SESSION['game'];
