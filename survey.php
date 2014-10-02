@@ -1,7 +1,7 @@
 <?php
 session_start();
 // store session data
-$_SESSION['game'] = 1; //$_REQUEST['game'];
+$_SESSION['game'] = 0; //$_REQUEST['game'];
 ?>
 <html>
 <body>
@@ -12,7 +12,7 @@ $_SESSION['game'] = 1; //$_REQUEST['game'];
 echo "The most popular types of games are:";
 ?><br/>
 <?php
-echo "Side Scroller: ". $_SESSION['game'];
+echo "Side Scroller: ". $_SESSION['game'] +1;
 ?><br/>
 <?php
 echo "MMORPG: ". $_SESSION['game'];
