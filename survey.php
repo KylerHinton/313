@@ -14,7 +14,7 @@ setcookie("game", "game", time()+3600);
 echo $_COOKIE["game"];
 
 // A way to view all cookies
-print_r($_COOKIE);
+//print_r($_COOKIE);
 ?>
 <?php
 //retrieve session data
