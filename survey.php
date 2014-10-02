@@ -46,16 +46,16 @@ echo "Views=". $_SESSION['game3'];*/
 echo "The most popular types of games are:";
 ?><br/>
 <?php
-echo "Side Scroller: ". $_SESSION['submit'];
+echo "Side Scroller: ". $_SESSION['game'];
 ?><br/>
 <?php
-echo "MMORPG: ". $_SESSION['submit'];
+echo "MMORPG: ". $_SESSION['game'];
 ?><br/>
 <?php
-echo "RTS: ". $_SESSION['submit'];
+echo "RTS: ". $_SESSION['game'];
 ?><br/>
 <?php
-echo "RPG: ". $_SESSION['submit'];
+echo "RPG: ". $_SESSION['game'];
 ?>
 
 <br>
