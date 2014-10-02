@@ -1,7 +1,7 @@
 <?php
 session_start();
-/*
-if ( (isset($_SESSION['hasVoted'])) ) {
+
+/*if ( (isset($_SESSION['game'])) ) {
 
 //Already Voted
 
@@ -12,7 +12,7 @@ else {
 
 }*/
 // store session data
-$_SESSION['game'] = $_REQUEST['game'];
+//$_SESSION['game'] = $_REQUEST['game'];
 /*$_SESSION['game1'] = 0;
 $_SESSION['game2'] = 0;
 $_SESSION['game3'] = 0;
