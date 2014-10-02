@@ -12,16 +12,16 @@ $_SESSION['game'] = $_REQUEST['survey'];
 echo "The most popular types of games are:";
 ?><br/>
 <?php
-echo "Side Scroller: ". $_SESSION['survey'];
+echo "Side Scroller: ". $_SESSION['game'];
 ?><br/>
 <?php
-echo "MMORPG: ". $_SESSION['survey'];
+echo "MMORPG: ". $_SESSION['game'];
 ?><br/>
 <?php
-echo "RTS: ". $_SESSION['survey'];
+echo "RTS: ". $_SESSION['game'];
 ?><br/>
 <?php
-echo "RPG: ". $_SESSION['survey'];
+echo "RPG: ". $_SESSION['game'];
 ?>
 
 <br>
