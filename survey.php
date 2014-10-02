@@ -47,10 +47,10 @@ echo "The most popular types of games are:";
 ?><br/>
 
 <?php
-echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['game'];
+echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['Side Scroller'];
 ?><br/>
 <?php
-echo "MMORPG: ". $_SESSION['game'] = $_REQUEST['game'];
+echo "MMORPG: ". $_SESSION['game'] = $_REQUEST['MMORPG'];
 ?><br/>
 <?php
 echo "RTS: ". $_SESSION['game'] = $_REQUEST['game'];
