@@ -9,7 +9,7 @@ $_SESSION['views']=1;
 
 <?php
 //retrieve session data
-echo "Pageviews=". $_SESSION['views'];
+echo "The most popular types of games are:". $_SESSION['game'];
 ?>
 <?php
 	echo $_POST["game"];
