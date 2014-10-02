@@ -52,7 +52,7 @@ echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['game'];
 <?php
 	if(!empty($_POST['game'])) {
 		foreach($_POST['game'] as $check) {
-			echo $check; ?>
+			echo +1; ?>
 			<br>
 			<?php
 		}
