@@ -45,6 +45,7 @@ echo "Views=". $_SESSION['game3'];*/
 //retrieve session data
 echo "The most popular types of games are:";
 ?><br/>
+$game = (isset($_POST['game']) ? $_POST['game'] : null);
 <?php
 echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['Side Scroller'];
 ?><br/>
