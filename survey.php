@@ -1,10 +1,7 @@
 <?php
 session_start();
 // store session data
-$_SESSION['survey'] = $_REQUEST['game'];
-$_SESSION['survey'] = $_REQUEST['game1'];
-$_SESSION['survey'] = $_REQUEST['game2'];
-$_SESSION['survey'] = $_REQUEST['game3'];
+$_SESSION['game'] = $_REQUEST['survey'];
 ?>
 <html>
 <body>
