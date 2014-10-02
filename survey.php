@@ -47,12 +47,7 @@ echo "The most popular types of games are:";
 ?><br/>
 
 <?php
-if(isset($_Session['game']))
-echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['game'] +1;
-else
-$_SESSION['game'];
-echo "Views=". $_SESSION['game'];
-
+echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['game'];
 ?><br/>
 <?php
 echo "MMORPG: ". $_SESSION['game1'] = $_REQUEST['game1'];
