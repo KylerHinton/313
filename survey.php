@@ -1,7 +1,7 @@
 <?php
 session_start();
 // store session data
-$_SESSION['game'] = $_REQUEST['game'];
+$_SESSION['game'] = 1; //$_REQUEST['game'];
 ?>
 <html>
 <body>
