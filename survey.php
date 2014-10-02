@@ -12,7 +12,7 @@ else {
 
 }*/
 // store session data
-$_SESSION['game'] = 0;//$_REQUEST['game'];
+$_SESSION['game'];//$_REQUEST['game'];
 /*$_SESSION['game1'] = 0;
 $_SESSION['game2'] = 0;
 $_SESSION['game3'] = 0;
@@ -46,16 +46,16 @@ echo "Views=". $_SESSION['game3'];*/
 echo "The most popular types of games are:";
 ?><br/>
 <?php
-echo "Side Scroller: ". $_GET['submit'];
+echo "Side Scroller: ". $_SESSION['submit'];
 ?><br/>
 <?php
-echo "MMORPG: ". $_SESSION['game'];
+echo "MMORPG: ". $_SESSION['submit'];
 ?><br/>
 <?php
-echo "RTS: ". $_SESSION['game'];
+echo "RTS: ". $_SESSION['submit'];
 ?><br/>
 <?php
-echo "RPG: ". $_SESSION['game'];
+echo "RPG: ". $_SESSION['submit'];
 ?>
 
 <br>
