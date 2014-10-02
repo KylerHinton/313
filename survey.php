@@ -1,8 +1,19 @@
 <?php
 session_start();
+/*
+if ( (isset($_SESSION['hasVoted'])) ) {
+
+//Already Voted
+
+}
+else {
+
+//Process the Vote
+
+}*/
 // store session data
 $_SESSION['game'] = 0;//$_REQUEST['game'];
-$_SESSION['game1'] = 0;
+/*$_SESSION['game1'] = 0;
 $_SESSION['game2'] = 0;
 $_SESSION['game3'] = 0;
 if(isset($_SESSION['game']))
@@ -24,7 +35,7 @@ if(isset($_SESSION['game3']))
 $_SESSION['game3']=$_SESSION['game3']+1;
 else
 $_SESSION['game3']=1;
-echo "Views=". $_SESSION['game3'];
+echo "Views=". $_SESSION['game3'];*/
 ?>
 
 <html>
@@ -35,7 +46,7 @@ echo "Views=". $_SESSION['game3'];
 echo "The most popular types of games are:";
 ?><br/>
 <?php
-echo "Side Scroller: ". $_SESSION['game'];
+echo "Side Scroller: ". $_GET['submit'];
 ?><br/>
 <?php
 echo "MMORPG: ". $_SESSION['game'];
