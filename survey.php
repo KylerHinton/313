@@ -40,6 +40,13 @@ echo "Views=". $_SESSION['game3'];*/
 
 <html>
 <body>
+<?php
+  if($_POST['submit'] == "Submit") 
+  {
+    $varGame = $_POST['game'];
+    $varName = $_POST['survey'];
+  }
+?>
 
 <?php
 //retrieve session data
@@ -59,7 +66,7 @@ echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['game'];
 	}
 ?>
 <?php
-echo "MMORPG: ". $_SESSION['game'] = $_REQUEST['game'];
+echo "MMORPG: ". $_SESSION['game'] = $_REQUEST['game'].value;
 ?><br/>
 <?php
 echo "RTS: ". $_SESSION['game'] = $_REQUEST['game'];
@@ -69,6 +76,21 @@ echo "RPG: ". $_SESSION['game'] = $_REQUEST['game'];
 ?>
 
 <br>
+<?php
+if($errorMessage != "") 
+{
+  echo("<p>There was an error:</p>\n");
+  echo("<ul>" . $errorMessage . "</ul>\n");
+} 
+else
+{
+  $fs = fopen("mydata.csv","a");
+  fwrite($fs,$varName . ", " . $varGame . "\n");
+  fclose($fs);
+ 
+  exit;
+}
+?>
 
 </html>
 </body>
