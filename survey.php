@@ -45,8 +45,13 @@ echo "Views=". $_SESSION['game3'];*/
   {
     $varGame = $_POST['game'];
     $varName = $_POST['survey'];
+    $number = $_SESSION['game'];
   }
 ?>
+<?php
+echo "You selected: ". $_SESSION['game'] = $_REQUEST['game'];
+echo "Thank you for your response!";
+?><br/>
 
 <?php
 //retrieve session data
@@ -66,7 +71,7 @@ echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['game'];
 	}
 ?>
 <?php
-echo "MMORPG: ". $_SESSION['game'] = $_REQUEST['game'].value;
+echo "MMORPG: ". $_SESSION['game'] = $_REQUEST['game'];
 ?><br/>
 <?php
 echo "RTS: ". $_SESSION['game'] = $_REQUEST['game'];
