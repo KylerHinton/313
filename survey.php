@@ -45,12 +45,12 @@ echo "Views=". $_SESSION['game3'];*/
   {
     $varGame = $_POST['game'];
     $varName = $_POST['survey'];
-    $number = $_SESSION['game'];
+   // $number = $_SESSION['game'];
   }
 ?>
 <?php
-echo "You selected: ". $_SESSION['game'] = $_REQUEST['game'];
-echo "Thank you for your response!";
+//echo "You selected: ". $_SESSION['game'] = $_REQUEST['game'];
+//echo "Thank you for your response!";
 ?><br/>
 
 <?php
