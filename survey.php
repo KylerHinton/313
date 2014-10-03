@@ -50,9 +50,9 @@ echo "The most popular types of games are:";
 echo "Side Scroller: ". $_SESSION['game'] = $_REQUEST['game'];
 ?><br/>
 <?php
-	if(!empty($_POST['game[0]'])) {
+	if(!empty($_POST['game'])) {
 		foreach($_POST['game'] as $check) {
-			echo 1; ?>
+			echo $check; ?>
 			<br>
 			<?php
 		}
