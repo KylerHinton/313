@@ -95,7 +95,7 @@ echo "The most popular types of games are:";
 ?><br/>
 
 <?php
-echo "Side Scroller: ". $_SESSION['game'].ssVote;// = $_REQUEST['game'];
+echo "Side Scroller: ". $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
 ?><br/>
 <?php
 	if(!empty($_POST['game'])) {
