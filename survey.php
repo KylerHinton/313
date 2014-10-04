@@ -78,52 +78,52 @@ echo "Views=". $_SESSION['game3'];*/
     $rpgVote = $rpgVote;
     $_SESSION['$rpgVote'] = $_SESSION['$rpgVote'] +1;
   }
-    if ($vote == 'blizzard')
+    if ($vote2 == 'blizzard')
   {
     $blizzVote = $blizzVote;
     $_SESSION['$blizzVote'] = $_SESSION['$blizzVote'] +1;
   }
-    if ($vote == 'riot')
+    if ($vote2 == 'riot')
   {
     $riotVote = $riotVote;
     $_SESSION['$riotVote'] = $_SESSION['$riotVote'] +1;
   }
-    if ($vote == 'bungie')
+    if ($vote2 == 'bungie')
   {
     $bungieVote = $bungieVote;
     $_SESSION['$bungieVote'] = $_SESSION['$bungieVote'] +1;
   }
-    if ($vote == 'ea')
+    if ($vote2 == 'ea')
   {
     $eaVote = $eaVote;
     $_SESSION['$eaVote'] = $_SESSION['$eaVote'] +1;
   }
-    if ($vote == 'computer')
+    if ($vote3 == 'computer')
   {
     $compVote = $compVote;
     $_SESSION['$compVote'] = $_SESSION['$compVote'] +1;
   }
-    if ($vote == 'console')
+    if ($vote3 == 'console')
   {
     $conVote = $conVote;
     $_SESSION['$conVote'] = $_SESSION['$conVote'] +1;
   }
-  if ($vote == '1')
+  if ($vote4 == '1')
   {
     $oneVote = $oneVote;
     $_SESSION['$oneVote'] = $_SESSION['$oneVote'] +1;
   }
-    if ($vote == '1to3')
+    if ($vote4 == '1to3')
   {
     $twoVote = $twoVote;
     $_SESSION['$twoVote'] = $_SESSION['$twoVote'] +1;
   }
-    if ($vote == '3to5')
+    if ($vote4 == '3to5')
   {
     $threeVote = $threeVote;
     $_SESSION['$threeVote'] = $_SESSION['$threeVote'] +1;
   }
-    if ($vote == '5')
+    if ($vote4 == '5')
   {
     $fourVote = $fourVote;
     $_SESSION['$fourVote'] = $_SESSION['$fourVote'] +1;
