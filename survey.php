@@ -63,14 +63,17 @@ echo "Views=". $_SESSION['game3'];*/
     if ($vote == 'MMORPG')
   {
     $mmoVote = $mmoVote + 1;
+    $_SESSION['$mmoVote'] = $_SESSION['$mmoVote'] +1;
   }
     if ($vote == 'RTS')
   {
     $rtsVote = $rtsVote + 1;
+    $_SESSION['$rtsVote'] = $_SESSION['rtsVote'] +1;
   }
     if ($vote == 'RPG')
   {
     $rpgVote = $rpgVote + 1;
+    $_SESSION['$rpgVote'] = $_SESSION['$rpgVote'] +1;
   }
 
     echo "The most popular types of games are:";
