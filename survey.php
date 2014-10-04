@@ -54,6 +54,7 @@ echo "Views=". $_SESSION['game3'];*/
   $vote = $_REQUEST['game'];
   if ($vote == 'Side Scroller')
   {
+    $ssVote = ssVote + 1;
     echo "YES YES YES";
   }
   if($_POST['submit'] == "Submit") 
@@ -94,7 +95,7 @@ echo "The most popular types of games are:";
 ?><br/>
 
 <?php
-echo "Side Scroller: ". $_SESSION['game'];// = $_REQUEST['game'];
+echo "Side Scroller: ". $_SESSION['game'].ssVote;// = $_REQUEST['game'];
 ?><br/>
 <?php
 	if(!empty($_POST['game'])) {
