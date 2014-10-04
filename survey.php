@@ -57,26 +57,26 @@ echo "Views=". $_SESSION['game3'];*/
   {
   if ($vote == 'Side Scroller')
   {
-    $ssVote = $ssVote + 1;
+    $ssVote = $ssVote;
     $_SESSION['$ssVote'] = $_SESSION['$ssVote'] +1;
   }
     if ($vote == 'MMORPG')
   {
-    $mmoVote = $mmoVote + 1;
+    $mmoVote = $mmoVote;
     $_SESSION['$mmoVote'] = $_SESSION['$mmoVote'] +1;
   }
     if ($vote == 'RTS')
   {
-    $rtsVote = $rtsVote + 1;
+    $rtsVote = $rtsVote;
     $_SESSION['$rtsVote'] = $_SESSION['rtsVote'] +1;
   }
     if ($vote == 'RPG')
   {
-    $rpgVote = $rpgVote + 1;
+    $rpgVote = $rpgVote;
     $_SESSION['$rpgVote'] = $_SESSION['$rpgVote'] +1;
   }
 
-    echo "The most popular types of games are:";
+  /*  echo "The most popular types of games are:";
     echo nl2br("\n");
 
     
@@ -91,10 +91,10 @@ echo "Views=". $_SESSION['game3'];*/
     echo nl2br("\n");
     
     echo "RPG: ". $_SESSION['$rpgVote'];//$rpgVote;//. $_SESSION['game'];// = $_REQUEST['game'];
-    $varGame = $_POST['game'];
+   */ $varGame = $_POST['game'];
     $varName = $_POST['survey'];
    // $number = $_SESSION['game'];
-    if(isset($_SESSION['game']))
+  /*  if(isset($_SESSION['game']))
     $_SESSION['game']=$_SESSION['game']+1;
     else
     $_SESSION['game']=0;
@@ -114,7 +114,7 @@ echo "Views=". $_SESSION['game3'];*/
     else
     $_SESSION['game3']=0;
     echo "Views=". $_SESSION['game3'];
-
+*/
   }
 ?>
 <?php
