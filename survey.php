@@ -52,6 +52,9 @@ echo "Views=". $_SESSION['game3'];*/
 ?>
 <?php
   $vote = $_REQUEST['game'];
+  $vote2 = $_REQUEST['gameC'];
+  $vote3 = $_REQUEST['gameT'];
+  $vote4 = $_REQUEST['gameH'];
 
   if($_POST['submit'] == "Submit") 
   {
@@ -74,6 +77,56 @@ echo "Views=". $_SESSION['game3'];*/
   {
     $rpgVote = $rpgVote;
     $_SESSION['$rpgVote'] = $_SESSION['$rpgVote'] +1;
+  }
+    if ($vote == 'blizzard')
+  {
+    $blizzVote = $blizzVote;
+    $_SESSION['$blizzVote'] = $_SESSION['$blizzVote'] +1;
+  }
+    if ($vote == 'riot')
+  {
+    $riotVote = $riotVote;
+    $_SESSION['$riotVote'] = $_SESSION['$riotVote'] +1;
+  }
+    if ($vote == 'bungie')
+  {
+    $bungieVote = $bungieVote;
+    $_SESSION['$bungieVote'] = $_SESSION['$bungieVote'] +1;
+  }
+    if ($vote == 'ea')
+  {
+    $eaVote = $eaVote;
+    $_SESSION['$eaVote'] = $_SESSION['$eaVote'] +1;
+  }
+    if ($vote == 'computer')
+  {
+    $compVote = $compVote;
+    $_SESSION['$compVote'] = $_SESSION['$compVote'] +1;
+  }
+    if ($vote == 'console')
+  {
+    $conVote = $conVote;
+    $_SESSION['$conVote'] = $_SESSION['$conVote'] +1;
+  }
+  if ($vote == '1')
+  {
+    $oneVote = $oneVote;
+    $_SESSION['$oneVote'] = $_SESSION['$oneVote'] +1;
+  }
+    if ($vote == '1to3')
+  {
+    $twoVote = $twoVote;
+    $_SESSION['$twoVote'] = $_SESSION['$twoVote'] +1;
+  }
+    if ($vote == '3to5')
+  {
+    $threeVote = $threeVote;
+    $_SESSION['$threeVote'] = $_SESSION['$threeVote'] +1;
+  }
+    if ($vote == '5')
+  {
+    $fourVote = $fourVote;
+    $_SESSION['$fourVote'] = $_SESSION['$fourVote'] +1;
   }
 
   /*  echo "The most popular types of games are:";
@@ -152,8 +205,79 @@ echo "RPG: ". $_SESSION['$rpgVote'];//$rpgVote//. $_SESSION['game'];// = $_REQUE
 else
   echo "RPG: 0"
 ?>
+<?php
+echo "The favorite gaming companies are:";
+?><br/>
+<?php
+if($_SESSION['$blizzVote'] >= 1)
+echo "Blizzard: ". $_SESSION['$blizzVote'];//$ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
+else
+echo "Blizzard: 0";
+?><br/>
 
-<br>
+<?php
+if($_SESSION['$riotVote'] >= 1)
+echo "Riot: ". $_SESSION['$riotVote'];//$mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+echo "Riot: 0"
+?><br/>
+<?php
+if($_SESSION['$bungieVote'] >= 1)
+echo "Bungie: ". $_SESSION['$bungieVote'];//$rtsVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+echo "Bungie: 0"
+?><br/>
+<?php
+if($_SESSION['$eaVote'] >= 1)
+echo "Electronic Arts: ". $_SESSION['$eaVote'];//$rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+  echo "Electronic Arts: 0"
+?>
+<?php
+echo "The favorite types of gaming are:";
+?><br/>
+<?php
+if($_SESSION['$compVote'] >= 1)
+echo "Computer: ". $_SESSION['$compVote'];//$ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
+else
+echo "Computer: 0";
+?><br/>
+
+<?php
+if($_SESSION['$conVote'] >= 1)
+echo "Console: ". $_SESSION['$conVote'];//$mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+echo "Console: 0"
+?><br/>
+<?php
+echo "The hours a day that are spent gaming:";
+?><br/>
+<?php
+if($_SESSION['$oneVote'] >= 1)
+echo "Less than 1: ". $_SESSION['$oneVote'];//$ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
+else
+echo "Less than 1: 0";
+?><br/>
+
+<?php
+if($_SESSION['$twoVote'] >= 1)
+echo "1-3: ". $_SESSION['$twoVote'];//$mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+echo "1-3: 0"
+?><br/>
+<?php
+if($_SESSION['$threeVote'] >= 1)
+echo "3-5: ". $_SESSION['$threeVote'];//$rtsVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+echo "3-5: 0"
+?><br/>
+<?php
+if($_SESSION['$fourVote'] >= 1)
+echo "Greater than 5: ". $_SESSION['$fourVote'];//$rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+  echo "Greater than 5: 0"
+?>
+<br/><br/>
 <?php
   if(!empty($_POST['game'])) {
     foreach($_POST['game'] as $check) {
