@@ -128,7 +128,7 @@ echo "The most popular types of games are:";
 ?><br/>
 
 <?php
-if($ssVote >= 1)
+if($_SESSION['$ssVote'] >= 1)
 echo "Side Scroller: ". $_SESSION['$ssVote'];//$ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
 else
 echo "Side Scroller: 0";
