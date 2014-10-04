@@ -147,7 +147,7 @@ else
 echo "RTS: 0"
 ?><br/>
 <?php
-if($_SESSION['$rpgVote'] >= 4)
+if($_SESSION['$rpgVote'] >= 1)
 echo "RPG: ". $_SESSION['$rpgVote'];//$rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
 else
   echo "RPG: 0"
