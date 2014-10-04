@@ -51,13 +51,18 @@ echo "Views=". $_SESSION['game3'];*/
 
 ?>
 <?php
+  $vote = $_REQUEST['game'];
+  if ($vote == 'Side Scroller')
+  {
+    echo "YES YES YES";
+  }
   if($_POST['submit'] == "Submit") 
   {
     $varGame = $_POST['game'];
     $varName = $_POST['survey'];
    // $number = $_SESSION['game'];
-    if(isset($_SESSION['Side Scroller']))
-    $_SESSION['Side Scroller']=$_SESSION['Side Scroller']+1;
+    if(isset($_SESSION['game']))
+    $_SESSION['game']=$_SESSION['game']+1;
     else
     $_SESSION['game']=0;
     echo "Views=". $_SESSION['game'];
