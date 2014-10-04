@@ -42,10 +42,10 @@ echo "Views=". $_SESSION['game3'];*/
 <body>
   <?php
 // Set session variables
-$_SESSION["game"] = 1;
-$_SESSION["game1"] = 1;
-$_SESSION["game2"] = 1;
-$_SESSION["game3"] = 1;
+//$_SESSION["game"] = 1;
+//$_SESSION["game1"] = 1;
+//$_SESSION["game2"] = 1;
+//$_SESSION["game3"] = 1;
 
 
 if(isset($_SESSION['game']))
