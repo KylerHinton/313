@@ -93,6 +93,7 @@ echo "Views=". $_SESSION['game3'];*/
     $_SESSION['game3']=$_SESSION['game3']+1;
     else
     $_SESSION['game3']=0;
+
     echo "Views=". $_SESSION['game3'];
     echo "The most popular types of games are:";
     ?><br/>
@@ -111,9 +112,9 @@ echo "Views=". $_SESSION['game3'];*/
     echo "RPG: ". $rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
     ?>
 
-<br>
+    <br/>
   }
-?>
+
 <?php
 //echo "You selected: ". $_SESSION['game'] = $_REQUEST['game'];
 //echo "Thank you for your response!";
