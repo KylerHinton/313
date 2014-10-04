@@ -48,26 +48,7 @@ echo "Views=". $_SESSION['game3'];*/
 //$_SESSION["game3"] = 1;
 
 
-if(isset($_SESSION['game']))
-$_SESSION['game']=$_SESSION['game']+1;
-else
-$_SESSION['game']=0;
-echo "Views=". $_SESSION['game'];
-if(isset($_SESSION['game1']))
-$_SESSION['game1']=$_SESSION['game1']+1;
-else
-$_SESSION['game1']=0;
-echo "Views=". $_SESSION['game1'];
-if(isset($_SESSION['views']))
-$_SESSION['game2']=$_SESSION['game2']+1;
-else
-$_SESSION['game2']=0;
-echo "Views=". $_SESSION['game2'];
-if(isset($_SESSION['game3']))
-$_SESSION['game3']=$_SESSION['game3']+1;
-else
-$_SESSION['game3']=0;
-echo "Views=". $_SESSION['game3'];
+
 ?>
 <?php
   if($_POST['submit'] == "Submit") 
@@ -75,6 +56,26 @@ echo "Views=". $_SESSION['game3'];
     $varGame = $_POST['game'];
     $varName = $_POST['survey'];
    // $number = $_SESSION['game'];
+    if(isset($_SESSION['game']))
+    $_SESSION['game']=$_SESSION['game']+1;
+    else
+    $_SESSION['game']=0;
+    echo "Views=". $_SESSION['game'];
+    if(isset($_SESSION['game1']))
+    $_SESSION['game1']=$_SESSION['game1']+1;
+    else
+    $_SESSION['game1']=0;
+    echo "Views=". $_SESSION['game1'];
+    if(isset($_SESSION['views']))
+    $_SESSION['game2']=$_SESSION['game2']+1;
+    else
+    $_SESSION['game2']=0;
+    echo "Views=". $_SESSION['game2'];
+    if(isset($_SESSION['game3']))
+    $_SESSION['game3']=$_SESSION['game3']+1;
+    else
+    $_SESSION['game3']=0;
+    echo "Views=". $_SESSION['game3'];
   }
 ?>
 <?php
