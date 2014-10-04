@@ -141,10 +141,16 @@ else
 echo "MMORPG: 0"
 ?><br/>
 <?php
+if($_SESSION['$rtsVote'] >= 1)
 echo "RTS: ". $_SESSION['$rtsVote'];//$rtsVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+echo "RTS: 0"
 ?><br/>
 <?php
+if($_SESSION['$rpgVote'] >= 4)
 echo "RPG: ". $_SESSION['$rpgVote'];//$rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+  echo "RPG: 0"
 ?>
 
 <br>
