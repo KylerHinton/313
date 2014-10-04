@@ -53,7 +53,7 @@ echo "Views=". $_SESSION['game3'];*/
 <?php
   $vote = $_REQUEST['game'];
 
-  php if($_POST['submit'] == "Submit") 
+  if($_POST['submit'] == "Submit") 
   {
   if ($vote == 'Side Scroller')
   {
