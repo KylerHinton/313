@@ -128,11 +128,17 @@ echo "The most popular types of games are:";
 ?><br/>
 
 <?php
+if($ssVote >= 1)
 echo "Side Scroller: ". $_SESSION['$ssVote'];//$ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
+else
+echo "Side Scroller: 0";
 ?><br/>
 
 <?php
+if($mmoVote >= 1)
 echo "MMORPG: ". $_SESSION['$mmoVote'];//$mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
+else
+echo "MMORPG: 0"
 ?><br/>
 <?php
 echo "RTS: ". $_SESSION['$rtsVote'];//$rtsVote//. $_SESSION['game'];// = $_REQUEST['game'];
