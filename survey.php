@@ -76,7 +76,7 @@ echo "Side Scroller: ". $_SESSION['game'];// = $_REQUEST['game'];
 	}
 ?>
 <?php
-echo "MMORPG: ". $_SESSION['game'];// = $_REQUEST['game'];
+echo "MMORPG: ". $_SESSION['game'] + 1;// = $_REQUEST['game'];
 ?><br/>
 <?php
 echo "RTS: ". $_SESSION['game'];// = $_REQUEST['game'];
