@@ -56,7 +56,7 @@ echo "Views=". $_SESSION['game3'];*/
     $varGame = $_POST['game'];
     $varName = $_POST['survey'];
    // $number = $_SESSION['game'];
-    if(isset($_SESSION['game']))
+    if(isset($_SESSION['Side Scroller']))
     $_SESSION['Side Scroller']=$_SESSION['Side Scroller']+1;
     else
     $_SESSION['game']=0;
