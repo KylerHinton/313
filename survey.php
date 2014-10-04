@@ -204,7 +204,7 @@ if($_SESSION['$rpgVote'] >= 1)
 echo "RPG: ". $_SESSION['$rpgVote'];//$rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
 else
   echo "RPG: 0"
-?>
+?><br/><br/>
 <?php
 echo "The favorite gaming companies are:";
 ?><br/>
@@ -232,7 +232,7 @@ if($_SESSION['$eaVote'] >= 1)
 echo "Electronic Arts: ". $_SESSION['$eaVote'];//$rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
 else
   echo "Electronic Arts: 0"
-?>
+?><br/><br/>
 <?php
 echo "The favorite types of gaming are:";
 ?><br/>
@@ -248,7 +248,7 @@ if($_SESSION['$conVote'] >= 1)
 echo "Console: ". $_SESSION['$conVote'];//$mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
 else
 echo "Console: 0"
-?><br/>
+?><br/><br/>
 <?php
 echo "The hours a day that are spent gaming:";
 ?><br/>
