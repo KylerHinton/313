@@ -135,7 +135,7 @@ echo "Side Scroller: 0";
 ?><br/>
 
 <?php
-if($mmoVote >= 1)
+if($_SESSION['$mmoVote'] >= 1)
 echo "MMORPG: ". $_SESSION['$mmoVote'];//$mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
 else
 echo "MMORPG: 0"
