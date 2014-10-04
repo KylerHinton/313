@@ -58,6 +58,7 @@ echo "Views=". $_SESSION['game3'];*/
   if ($vote == 'Side Scroller')
   {
     $ssVote = $ssVote + 1;
+    $_SESSION['$ssVote'] = $_SESSION['$ssVote'] +1;
   }
     if ($vote == 'MMORPG')
   {
