@@ -71,6 +71,22 @@ echo "Views=". $_SESSION['game3'];*/
   {
     $rpgVote = $rpgVote + 1;
   }
+
+    echo "The most popular types of games are:";
+    echo nl2br("\n");
+
+    
+    echo "Side Scroller: ". $ssVote;//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
+    echo nl2br("\n");
+
+    
+    echo "MMORPG: ". $mmoVote;//. $_SESSION['game'];// = $_REQUEST['game'];
+    echo nl2br("\n");
+    
+    echo "RTS: ". $rtsVote;//. $_SESSION['game'];// = $_REQUEST['game'];
+    echo nl2br("\n");
+    
+    echo "RPG: ". $rpgVote;//. $_SESSION['game'];// = $_REQUEST['game'];
     $varGame = $_POST['game'];
     $varName = $_POST['survey'];
    // $number = $_SESSION['game'];
@@ -93,6 +109,7 @@ echo "Views=". $_SESSION['game3'];*/
     $_SESSION['game3']=$_SESSION['game3']+1;
     else
     $_SESSION['game3']=0;
+    echo "Views=". $_SESSION['game3'];
 
   }
 ?>
