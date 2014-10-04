@@ -40,6 +40,11 @@ echo "Views=". $_SESSION['game3'];*/
 
 <html>
 <body>
+  <?php
+// Set session variables
+$_SESSION["game"] = 1;
+
+?>
 <?php
   if($_POST['submit'] == "Submit") 
   {
