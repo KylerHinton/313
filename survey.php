@@ -68,7 +68,7 @@ echo "Views=". $_SESSION['game3'];*/
     if ($vote == 'RTS')
   {
     $rtsVote = $rtsVote;
-    $_SESSION['$rtsVote'] = $_SESSION['rtsVote'] +1;
+    $_SESSION['$rtsVote'] = $_SESSION['$rtsVote'] +1;
   }
     if ($vote == 'RPG')
   {
@@ -120,7 +120,7 @@ echo "Views=". $_SESSION['game3'];*/
 <?php
 //echo "You selected: ". $_SESSION['game'] = $_REQUEST['game'];
 //echo "Thank you for your response!";
-?><br/>
+?>
 
 <?php
 //retrieve session data
