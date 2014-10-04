@@ -84,13 +84,13 @@ echo "Views=". $_SESSION['game3'];*/
     echo nl2br("\n");
 
     
-    echo "MMORPG: ". $mmoVote;//. $_SESSION['game'];// = $_REQUEST['game'];
+    echo "MMORPG: ". $_SESSION['$mmoVote'];// $mmoVote;//. $_SESSION['game'];// = $_REQUEST['game'];
     echo nl2br("\n");
     
-    echo "RTS: ". $rtsVote;//. $_SESSION['game'];// = $_REQUEST['game'];
+    echo "RTS: ". $_SESSION['$rtsVote'];//$rtsVote;//. $_SESSION['game'];// = $_REQUEST['game'];
     echo nl2br("\n");
     
-    echo "RPG: ". $rpgVote;//. $_SESSION['game'];// = $_REQUEST['game'];
+    echo "RPG: ". $_SESSION['$rpgVote'];//$rpgVote;//. $_SESSION['game'];// = $_REQUEST['game'];
     $varGame = $_POST['game'];
     $varName = $_POST['survey'];
    // $number = $_SESSION['game'];
