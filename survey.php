@@ -94,6 +94,24 @@ echo "Views=". $_SESSION['game3'];*/
     else
     $_SESSION['game3']=0;
     echo "Views=". $_SESSION['game3'];
+    echo "The most popular types of games are:";
+    ?><br/>
+
+    <?php
+    echo "Side Scroller: ". $ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
+    ?><br/>
+
+    <?php
+    echo "MMORPG: ". $mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
+    ?><br/>
+    <?php
+    echo "RTS: ". $rtsVote//. $_SESSION['game'];// = $_REQUEST['game'];
+    ?><br/>
+    <?php
+    echo "RPG: ". $rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
+    ?>
+
+<br>
   }
 ?>
 <?php
@@ -109,15 +127,7 @@ echo "The most popular types of games are:";
 <?php
 echo "Side Scroller: ". $ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
 ?><br/>
-<?php
-	if(!empty($_POST['game'])) {
-		foreach($_POST['game'] as $check) {
-			echo $check; ?>
-			<br>
-			<?php
-		}
-	}
-?>
+
 <?php
 echo "MMORPG: ". $mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
 ?><br/>
@@ -129,6 +139,15 @@ echo "RPG: ". $rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
 ?>
 
 <br>
+<?php
+  if(!empty($_POST['game'])) {
+    foreach($_POST['game'] as $check) {
+      echo $check; ?>
+      <br>
+      <?php
+    }
+  }
+?>
 <?php
 if($errorMessage != "") 
 {
