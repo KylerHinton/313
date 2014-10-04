@@ -107,7 +107,7 @@ echo "The most popular types of games are:";
 ?><br/>
 
 <?php
-echo "Side Scroller: " $ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
+echo "Side Scroller: ". $ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
 ?><br/>
 <?php
 	if(!empty($_POST['game'])) {
@@ -119,13 +119,13 @@ echo "Side Scroller: " $ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game
 	}
 ?>
 <?php
-echo "MMORPG: " $mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
+echo "MMORPG: ". $mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
 ?><br/>
 <?php
-echo "RTS: " $rtsVote//. $_SESSION['game'];// = $_REQUEST['game'];
+echo "RTS: ". $rtsVote//. $_SESSION['game'];// = $_REQUEST['game'];
 ?><br/>
 <?php
-echo "RPG: "$rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
+echo "RPG: ". $rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
 ?>
 
 <br>
