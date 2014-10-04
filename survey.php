@@ -77,7 +77,7 @@ echo "Views=". $_SESSION['game3'];*/
     echo nl2br("\n");
 
     
-    echo "Side Scroller: ". $ssVote;//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
+    echo "Side Scroller: ". $_SESSION['$ssVote'];//$ssVote;//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
     echo nl2br("\n");
 
     
