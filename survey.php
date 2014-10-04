@@ -53,7 +53,7 @@ echo "Views=". $_SESSION['game3'];*/
 <?php
   $vote = $_REQUEST['game'];
 
-  if($_POST['submit'] == "Submit") 
+  php if($_POST['submit'] == "Submit") 
   {
   if ($vote == 'Side Scroller')
   {
@@ -96,25 +96,22 @@ echo "Views=". $_SESSION['game3'];*/
 
     echo "Views=". $_SESSION['game3'];
     echo "The most popular types of games are:";
-    ?><br/>
+    echo nl2br("\n");
 
-    <?php
+    
     echo "Side Scroller: ". $ssVote//. $_SESSION['game'].$ssVote;// = $_REQUEST['game'];
-    ?><br/>
+    echo nl2br("\n");
 
-    <?php
+    
     echo "MMORPG: ". $mmoVote//. $_SESSION['game'];// = $_REQUEST['game'];
-    ?><br/>
-    <?php
+    echo nl2br("\n");
+    
     echo "RTS: ". $rtsVote//. $_SESSION['game'];// = $_REQUEST['game'];
-    ?><br/>
-    <?php
+    echo nl2br("\n");
+    
     echo "RPG: ". $rpgVote//. $_SESSION['game'];// = $_REQUEST['game'];
-    ?>
-
-    <br/>
   }
-
+?>
 <?php
 //echo "You selected: ". $_SESSION['game'] = $_REQUEST['game'];
 //echo "Thank you for your response!";
