@@ -27,12 +27,12 @@ echo "<html><body style='background-color:maroon;'>";
 echo "<h1>Video Game Database</h1>";
 echo "<b>Add Games Played</b>";
 echo "<form>";
-echo "Username: <input type = 'text' name = 'username'<br/>";
-echo "Game Name: <input type = 'text' name = 'gameName'<br/>";
-echo "System: <input type = 'text' name = 'system'<br/>";
-echo "Hours Played: <input type = 'text' name = 'hoursPlayed'<br/>";
-echo "Game Finished: <input type = 'text' name = 'gameFinished'<br/>";
-echo"<input type='submit' name='submit' value='gamesPlayed'>";
+echo "Username: <input type = 'text' name = 'username'><br/>";
+echo "Game Name: <input type = 'text' name = 'gameName'><br/>";
+echo "System: <input type = 'text' name = 'system'><br/>";
+echo "Hours Played: <input type = 'text' name = 'hoursPlayed'><br/>";
+echo "Game Finished: <input type = 'text' name = 'gameFinished'><br/>";
+echo"<input type='submit' name='submit' value='gamesPlayed'><br/><br/>";
 echo "</form>";
 foreach($gamers AS $games)
 {
