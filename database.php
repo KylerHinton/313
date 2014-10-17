@@ -26,7 +26,7 @@ $gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
 echo "<html><body>";
 foreach($gamers AS $games)
 {
-echo "<b>".$games['game_id']." ".$games['username'].":".$games['game_name'].'</b> - "'.$games['system_name'].'"'.$games['hours_played'].$games['completed'];
+echo "ID: ".$games['game_id']."<br /> Username:".$games['username']."<br /> Game Name: ".$games['game_name'].' <br /> System: '.$games['system_name']."<br />Hours played: ".$games['hours_played']."<br />Game Finished:".$games['completed']."<br />";
 }
 echo "</body></html>"
 ?>​
