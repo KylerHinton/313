@@ -99,6 +99,24 @@ foreach($gamerVideos AS $game_videos)
 {
 echo "<b>Title: </b>".$game_videos['title']."<br /><b>Length:</b> ".$game_videos['length']."<br /><b>Level: </b>".$game_videos['level']."<br /><br />";
 }
+$sqlUsers = "SELECT * FROM users";
+
+$statement6 = $db->query($sqlUsers);
+try
+{
+$statement6 = $db->prepare($sqlUsers);
+$val = $statement6->execute(array());
+}
+catch(PDOException $e)
+{
+echo $e->getMessage();
+return false;
+}
+$gamerUsers = $statement6->fetchAll(PDO::FETCH_ASSOC);
+foreach($gamerUsers AS $users)
+{
+echo "<b>User ID: </b>".$users['user_id']."<br /><b>Username:</b> ".$users['username']."<br /><b>Skype Name: </b>".$users['skype_name'].' <br /><b>Email:</b> '.$users['email']."<br /><b>Created On:</b> ".$users['create_date']."<br /><br />";
+}
 echo "<div style='background-color:beige;border:15px solid;border-color:black; text-align:center; font-family:fantasy;color:blue; width:400px; margin:auto;'>";
 	echo "<form action='survey.php' method='post' name='survey' id='myForm' style='text-align:left;'>";
     echo "<br/>What is your favorite type of game?<br/>";
