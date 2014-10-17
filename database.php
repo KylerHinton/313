@@ -51,5 +51,5 @@ echo "<div style='background-color:beige;border:15px solid;border-color:black; t
    	 "<p><a href = 'survey.php'><p id='style3'>View Results</b></a></p>".
   			"<input type='submit' name='submit' value='Submit'>". 
 	"<br/></div>";
-echo "</body></html>"
+echo "</body></html>";
 ?>​
