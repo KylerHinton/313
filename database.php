@@ -45,6 +45,24 @@ foreach($gamerImages AS $game_images)
 {
 echo "<b>Level: </b>".$game_images['level']."<br /><b>Name:</b> ".$game_images['name']."<br /><b>NPC: </b>".$game_images['npc']."<br /><br />";
 }
+$gameMusic = "SELECT * FROM game_music";
+
+$statement3 = $db->query($gameMusic);
+try
+{
+$statement3 = $db->prepare($gameMusic);
+$val = $statement3->execute(array());
+}
+catch(PDOException $e)
+{
+echo $e->getMessage();
+return false;
+}
+$gamerMusic = $statement3->fetchAll(PDO::FETCH_ASSOC);
+foreach($gamerMusic AS $game_music)
+{
+echo "<b>Title: </b>".$game_music['title']."<br /><b>Song Length:</b> ".$game_music['length']."<br /><b>Game Location of Music: </b>".$game_music['ingame_loc'].' <br /><b>Artists Name:</b> '.$games['artist_name']."<br /><br />";
+}
 echo "<div style='background-color:beige;border:15px solid;border-color:black; text-align:center; font-family:fantasy;color:blue; width:400px; margin:auto;'>";
 	echo "<form action='survey.php' method='post' name='survey' id='myForm' style='text-align:left;'>";
     echo "<br/>What is your favorite type of game?<br/>";
