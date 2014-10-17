@@ -76,6 +76,14 @@ echo $e->getMessage();
 return false;
 }
 $gamerMusic = $statement3->fetchAll(PDO::FETCH_ASSOC);
+echo "<b>Add Game Music";
+echo "<form><table><tr>";
+echo "<td align='left'><b>Title: </td><td align='right'><input type = 'text' name = 'musicTitle'></td></tr>";
+echo "<tr><td align='left'><b>Length: </td><td align='right'><input type = 'text' name = 'musicLength'></td></tr>";
+echo "<tr><td align='left'><b>In-game Location: </td><td align='right'><input type = 'text' name = 'gameLoc'></td></tr>";
+echo "<tr><td align='left'><b>Artists Name: </td><td align='right'><input type = 'text' name = 'artistName'></td></tr>";
+echo"<tr><td align='left'><input type='submit' name='gameMusic' value='Submit'></td></tr><br/><br/>";
+echo "</table></form></b>";
 foreach($gamerMusic AS $game_music)
 {
 echo "<b>Title: </b>".$game_music['title']."<br /><b>Song Length:</b> ".$game_music['length']."<br /><b>Game Location of Music: </b>".$game_music['ingame_loc'].' <br /><b>Artists Name:</b> '.$game_music['artist_name']."<br /><br />";
@@ -94,6 +102,15 @@ echo $e->getMessage();
 return false;
 }
 $gamerType = $statement4->fetchAll(PDO::FETCH_ASSOC);
+echo "<b>Add Game Type";
+echo "<form><table><tr>";
+echo "<td align='left'><b>Adventure/Story: </td><td align='right'><input type = 'text' name = 'advStory'></td></tr>";
+echo "<tr><td align='left'><b>Arcade: </td><td align='right'><input type = 'text' name = 'arc'></td></tr>";
+echo "<tr><td align='left'><b>First Person Shooter: </td><td align='right'><input type = 'text' name = 'fps'></td></tr>";
+echo "<tr><td align='left'><b>Real Time Strategy: </td><td align='right'><input type = 'text' name = 'rts'></td></tr>";
+echo "<tr><td align='left'><b>Role Playing: </td><td align='right'><input type = 'text' name = 'rpg'></td></tr>";
+echo"<tr><td align='left'><input type='submit' name='gameType' value='Submit'></td></tr><br/><br/>";
+echo "</table></form></b>";
 foreach($gamerType AS $game_types)
 {
 echo "<b>ID: </b>".$game_types['user_id']."<br /><b>Adventure/Story:</b> ".$game_types['adventure_story']."<br /><b>Arcade: </b>".$game_types['arcade'].' <br /><b>First Person Shooter:</b> '.$game_types['first_person_shooter']."<br /><b>Real Time Strategy:</b> ".$game_types['real_time_strategy']."<br /><b>Role Playing:</b> ".$game_types['role_playing']."<br /><br />";
@@ -112,6 +129,13 @@ echo $e->getMessage();
 return false;
 }
 $gamerVideos = $statement5->fetchAll(PDO::FETCH_ASSOC);
+echo "<b>Add Game Videos";
+echo "<form><table><tr>";
+echo "<td align='left'><b>Title: </td><td align='right'><input type = 'text' name = 'videoTitle'></td></tr>";
+echo "<tr><td align='left'><b>Length: </td><td align='right'><input type = 'text' name = 'videoLength'></td></tr>";
+echo "<tr><td align='left'><b>Level: </td><td align='right'><input type = 'text' name = 'videoLevel'></td></tr>";
+echo"<tr><td align='left'><input type='submit' name='gameVideos' value='Submit'></td></tr><br/><br/>";
+echo "</table></form></b>";
 foreach($gamerVideos AS $game_videos)
 {
 echo "<b>Title: </b>".$game_videos['title']."<br /><b>Length:</b> ".$game_videos['length']."<br /><b>Level: </b>".$game_videos['level']."<br /><br />";
@@ -130,6 +154,14 @@ echo $e->getMessage();
 return false;
 }
 $gamerUsers = $statement6->fetchAll(PDO::FETCH_ASSOC);
+echo "<b>Add Game User";
+echo "<form><table><tr>";
+echo "<td align='left'><b>Username: </td><td align='right'><input type = 'text' name = 'usernameGame'></td></tr>";
+echo "<tr><td align='left'><b>Skype Name: </td><td align='right'><input type = 'text' name = 'skypeName'></td></tr>";
+echo "<tr><td align='left'><b>Email: </td><td align='right'><input type = 'text' name = 'email'></td></tr>";
+echo "<tr><td align='left'><b>Created On: </td><td align='right'><input type = 'text' name = 'createdOn'></td></tr>";
+echo"<tr><td align='left'><input type='submit' name='userCreation' value='Submit'></td></tr><br/><br/>";
+echo "</table></form></b>";
 foreach($gamerUsers AS $users)
 {
 echo "<b>User ID: </b>".$users['user_id']."<br /><b>Username:</b> ".$users['username']."<br /><b>Skype Name: </b>".$users['skype_name'].' <br /><b>Email:</b> '.$users['email']."<br /><b>Created On:</b> ".$users['create_date']."<br /><br />";
