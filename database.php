@@ -61,7 +61,25 @@ return false;
 $gamerMusic = $statement3->fetchAll(PDO::FETCH_ASSOC);
 foreach($gamerMusic AS $game_music)
 {
-echo "<b>Title: </b>".$game_music['title']."<br /><b>Song Length:</b> ".$game_music['length']."<br /><b>Game Location of Music: </b>".$game_music['ingame_loc'].' <br /><b>Artists Name:</b> '.$games['artist_name']."<br /><br />";
+echo "<b>Title: </b>".$game_music['title']."<br /><b>Song Length:</b> ".$game_music['length']."<br /><b>Game Location of Music: </b>".$game_music['ingame_loc'].' <br /><b>Artists Name:</b> '.$game_music['artist_name']."<br /><br />";
+}
+$gameType = "SELECT * FROM game_types";
+
+$statement4 = $db->query($gameType);
+try
+{
+$statement4 = $db->prepare($gameType);
+$val = $statement4->execute(array());
+}
+catch(PDOException $e)
+{
+echo $e->getMessage();
+return false;
+}
+$gamerType = $statement4->fetchAll(PDO::FETCH_ASSOC);
+foreach($gamerType AS $game_types)
+{
+echo "<b>ID: </b>".$game_types['user_id']."<br /><b>Adventure/Story:</b> ".$game_types['adventure_story']."<br /><b>Arcade: </b>".$game_types['arcade'].' <br /><b>First Person Shooter:</b> '.$game_types['first_person_shooter']."<br /><b>Real Time Strategy:</b> ".$games['real_time_strategy']."<br /><b>Role Playing:</b> ".$games['role_playing']."<br /><br />";
 }
 echo "<div style='background-color:beige;border:15px solid;border-color:black; text-align:center; font-family:fantasy;color:blue; width:400px; margin:auto;'>";
 	echo "<form action='survey.php' method='post' name='survey' id='myForm' style='text-align:left;'>";
