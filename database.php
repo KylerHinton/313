@@ -27,7 +27,7 @@ echo "<html><body style='background-color:maroon;'>";
 echo "<h1>Video Game Database</h1>";
 echo "<b>Add Games Played";
 echo "<form>";
-echo "Username: <input type = 'text' name = 'username' float='right'><br/>";
+echo "Username: <input type = 'text' name = 'username' style='text-align:right'><br/>";
 echo "Game Name: <input type = 'text' name = 'gameName' float='right'><br/>";
 echo "System: <input type = 'text' name = 'system'><br/>";
 echo "Hours Played: <input type = 'text' name = 'hoursPlayed'><br/>";
