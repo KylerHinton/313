@@ -28,6 +28,23 @@ foreach($gamers AS $games)
 {
 echo "<b>ID: </b>".$games['game_id']."<br /><b>Username:</b> ".$games['username']."<br /><b>Game Name: </b>".$games['game_name'].' <br /><b>System:</b> '.$games['system_name']."<br /><b>Hours played:</b> ".$games['hours_played']."<br /><b>Game Finished:</b> ".$games['completed']."<br /><br />";
 }
+$gameImages = "SELECT * FROM game_images";
+$statement = $db->query($gameImages);
+try
+{
+$statement2 = $db->prepare($gameImages);
+$val = $statement2->execute(array());
+}
+catch(PDOException $e)
+{
+echo $e->getMessage();
+return false;
+}
+$gamerImages = $statement2->fetchAll(PDO::FETCH_ASSOC);
+foreach($gamerImages AS $game_images)
+{
+echo "<b>Level: </b>".$game_images['level']."<br /><b>Name:</b> ".$game_images['name']."<br /><b>NPC: </b>".$games['npc']."<br /><br />";
+}
 echo "<div style='background-color:beige;border:15px solid;border-color:black; text-align:center; font-family:fantasy;color:blue; width:400px; margin:auto;'>";
 	echo "<form action='survey.php' method='post' name='survey' id='myForm' style='text-align:left;'>";
     echo "<br/>What is your favorite type of game?<br/>";
