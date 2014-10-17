@@ -51,6 +51,13 @@ echo $e->getMessage();
 return false;
 }
 $gamerImages = $statement2->fetchAll(PDO::FETCH_ASSOC);
+echo "<b>Add Game Images";
+echo "<form><table><tr>";
+echo "<td align='left'><b>Level: </td><td align='right'><input type = 'text' name = 'level'></td></tr>";
+echo "<tr><td align='left'><b>Name: </td><td align='right'><input type = 'text' name = 'imageName'></td></tr>";
+echo "<tr><td align='left'><b>NPC: </td><td align='right'><input type = 'text' name = 'npc'></td></tr>";
+echo"<tr><td align='left'><input type='submit' name='gameImages' value='Submit'></td></tr><br/><br/>";
+echo "</table></form></b>";
 foreach($gamerImages AS $game_images)
 {
 echo "<b>Level: </b>".$game_images['level']."<br /><b>Name:</b> ".$game_images['name']."<br /><b>NPC: </b>".$game_images['npc']."<br /><br />";
