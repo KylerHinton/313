@@ -29,7 +29,7 @@ echo "<b>Add Games Played";
 echo "<form><table><tr>";
 echo "<td align='left'>Username: </td><td align='right'><input type = 'text' name = 'username'></td></tr>";
 echo "<tr><td align='left'>Game Name: </td><td align='right'><input type = 'text' name = 'gameName'></td></tr>";
-echo "<tr<td align='left'>System: </td><td align='right'><input type = 'text' name = 'system'></td></tr>";
+echo "<tr><td align='left'>System: </td><td align='right'><input type = 'text' name = 'system'></td></tr>";
 echo "<tr><td align='left'>Hours Played: </td><td align='right'><input type = 'text' name = 'hoursPlayed'></td></tr>";
 echo "<tr><td align='left'>Game Finished: </td><td align='right'><input type = 'text' name = 'gameFinished'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gamesPlayed' value='Submit'></td></tr><br/><br/>";
