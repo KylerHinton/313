@@ -1,8 +1,8 @@
 <?php 
-//$user = "php";
-//$password = "password";
+$user = "php";
+$password = "password";
 try{
-$db = new PDO("mysql:host=127.3.240.130:3306;dbname=video_game_db");//, $user, $password);
+$db = new PDO("mysql:host=127.3.240.130:3306;dbname=video_game_db", $user, $password);
 }
 catch(PDOException $ex){
 echo "Error!: " . $ex->getMessage();
