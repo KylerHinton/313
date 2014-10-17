@@ -28,7 +28,7 @@ foreach($gamers AS $games)
 {
 echo "<b>ID: </b>".$games['game_id']."<br /><b>Username:</b> ".$games['username']."<br /><b>Game Name: </b>".$games['game_name'].' <br /><b>System:</b> '.$games['system_name']."<br /><b>Hours played:</b> ".$games['hours_played']."<br /><b>Game Finished:</b> ".$games['completed']."<br /><br />";
 }
-/*echo "<div style='background-color:beige;border:15px solid;border-color:black; text-align:center; font-family:fantasy;color:blue; width:400px; margin:auto;'>";
+echo "<div style='background-color:beige;border:15px solid;border-color:black; text-align:center; font-family:fantasy;color:blue; width:400px; margin:auto;'>";
 	echo "<form action='survey.php' method='post' name='survey' id='myForm' style='text-align:left;'>";
     echo "<br/>What is your favorite type of game?<br/>";
     echo "<input type='radio' name='game' value='Side Scroller'>Side Scroller (Super Mario Bros)<br/>";
@@ -50,6 +50,6 @@ echo "<b>ID: </b>".$games['game_id']."<br /><b>Username:</b> ".$games['username'
     echo "<input type='radio' name='gameH' value='5'>Greater than 5<br/>";
  echo"<p><a href = 'survey.php'><p id='style3'>View Results</b></a></p>";
   	echo"<input type='submit' name='submit' value='Submit'>"; 
-	echo "<br/></div>";*/
+	echo "<br/></div>";
 echo "</body></html>";
 ?>​
