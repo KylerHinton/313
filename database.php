@@ -26,14 +26,14 @@ $gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
 echo "<html><body style='background-color:maroon;'>";
 echo "<h1>Video Game Database</h1>";
 echo "<b>Add Games Played";
-echo "<form>";
-echo "Username: <input type = 'text' name = 'username' style='text-align:right'><br/>";
-echo "Game Name: <input type = 'text' name = 'gameName' float='right'><br/>";
-echo "System: <input type = 'text' name = 'system'><br/>";
-echo "Hours Played: <input type = 'text' name = 'hoursPlayed'><br/>";
-echo "Game Finished: <input type = 'text' name = 'gameFinished'><br/>";
-echo"<input type='submit' name='gamesPlayed' value='Submit'><br/><br/>";
-echo "</form></b>";
+echo "<form><table><tr>";
+echo "<td align='left'>Username: </td><td align='right'><input type = 'text' name = 'username'></td><br/>";
+echo "<td align='left'>Game Name: </td><td align='right'><input type = 'text' name = 'gameName'></td><br/>";
+echo "<td align='left'>System: </td><td align='right'><input type = 'text' name = 'system'></td><br/>";
+echo "<td align='left'>Hours Played: </td><td align='right'><input type = 'text' name = 'hoursPlayed'></td><br/>";
+echo "<td align='left'>Game Finished: </td><td align='right'><input type = 'text' name = 'gameFinished'></td><br/>";
+echo"<td align='left'><input type='submit' name='gamesPlayed' value='Submit'></td><br/><br/>";
+echo "</table></form></b>";
 foreach($gamers AS $games)
 {
 echo "<b>ID: </b>".$games['game_id']."<br /><b>Username:</b> ".$games['username']."<br /><b>Game Name: </b>".$games['game_name'].' <br /><b>System:</b> '.$games['system_name']."<br /><b>Hours played:</b> ".$games['hours_played']."<br /><b>Game Finished:</b> ".$games['completed']."<br /><br />";
