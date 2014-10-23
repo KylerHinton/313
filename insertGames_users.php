@@ -32,7 +32,7 @@ try{
     $statement = $db->prepare($sql);
     $statement->execute();
  	$gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
- 	echo"<html><body style='background-color:olive';>";
+ 	echo"<html><body style='background-color:teal';>";
 	foreach($gamers AS $users)
 	{
 		echo "<b>User ID: </b>".$users['user_id']."<br /><b>Username:</b> ".$users['username']."<br /><b>Skype Name: </b>".$users['skype_name'].' <br /><b>Email:</b> '.$users['email']."<br /><b>Created On:</b> ".$users['create_date']."<br /><br />";
