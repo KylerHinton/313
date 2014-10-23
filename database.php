@@ -26,12 +26,12 @@ $gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
 echo "<html><body style='background-color:maroon;'>";
 echo "<h1>Video Game Database</h1>";
 echo "<b>Add Games Played";
-echo "<form><table><tr>";
-echo "<td align='left'><b>Username: </td><td align='right'><input type = 'text' name = 'username'></td></tr>";
-echo "<tr><td align='left'><b>Game Name: </td><td align='right'><input type = 'text' name = 'gameName'></td></tr>";
-echo "<tr><td align='left'><b>System: </td><td align='right'><input type = 'text' name = 'system'></td></tr>";
-echo "<tr><td align='left'><b>Hours Played: </td><td align='right'><input type = 'text' name = 'hoursPlayed'></td></tr>";
-echo "<tr><td align='left'><b>Game Finished: </td><td align='right'><input type = 'text' name = 'gameFinished'></td></tr>";
+echo "<form id='form1' action='insertGames.php' method='POST'><table><tr>";
+echo "<td align='left'><b>Username: </td><td align='right'><input type = 'text' id='insUsername' name = 'insUsername'></td></tr>";
+echo "<tr><td align='left'><b>Game Name: </td><td align='right'><input type = 'text' id='insGameName' name = 'insGameName'></td></tr>";
+echo "<tr><td align='left'><b>System: </td><td align='right'><input type = 'text' id='insSystem' name = 'insSystem'></td></tr>";
+echo "<tr><td align='left'><b>Hours Played: </td><td align='right'><input type = 'text' id='insHoursPlayed' name = 'insHoursPlayed'></td></tr>";
+echo "<tr><td align='left'><b>Game Finished: </td><td align='right'><input type = 'text' id='insGameFinished' name = 'insGameFinished'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gamesPlayed' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
 foreach($gamers AS $games)
@@ -52,7 +52,7 @@ return false;
 }
 $gamerImages = $statement2->fetchAll(PDO::FETCH_ASSOC);
 echo "<b>Add Game Images";
-echo "<form><table><tr>";
+echo "<form id='form2' action='insertGames_images.php' method='POST'><table><tr>";
 echo "<td align='left'><b>Level: </td><td align='right'><input type = 'text' name = 'level'></td></tr>";
 echo "<tr><td align='left'><b>Name: </td><td align='right'><input type = 'text' name = 'imageName'></td></tr>";
 echo "<tr><td align='left'><b>NPC: </td><td align='right'><input type = 'text' name = 'npc'></td></tr>";
@@ -77,7 +77,7 @@ return false;
 }
 $gamerMusic = $statement3->fetchAll(PDO::FETCH_ASSOC);
 echo "<b>Add Game Music";
-echo "<form><table><tr>";
+echo "<form id='form3' action='insertGames_music.php' method='POST'><table><tr>";
 echo "<td align='left'><b>Title: </td><td align='right'><input type = 'text' name = 'musicTitle'></td></tr>";
 echo "<tr><td align='left'><b>Length: </td><td align='right'><input type = 'text' name = 'musicLength'></td></tr>";
 echo "<tr><td align='left'><b>In-game Location: </td><td align='right'><input type = 'text' name = 'gameLoc'></td></tr>";
@@ -103,7 +103,7 @@ return false;
 }
 $gamerType = $statement4->fetchAll(PDO::FETCH_ASSOC);
 echo "<b>Add Game Type";
-echo "<form><table><tr>";
+echo "<form id='form4' action='insertGames_types.php' method='POST'><table><tr>";
 echo "<td align='left'><b>Adventure/Story: </td><td align='right'><input type = 'text' name = 'advStory'></td></tr>";
 echo "<tr><td align='left'><b>Arcade: </td><td align='right'><input type = 'text' name = 'arc'></td></tr>";
 echo "<tr><td align='left'><b>First Person Shooter: </td><td align='right'><input type = 'text' name = 'fps'></td></tr>";
@@ -130,7 +130,7 @@ return false;
 }
 $gamerVideos = $statement5->fetchAll(PDO::FETCH_ASSOC);
 echo "<b>Add Game Videos";
-echo "<form><table><tr>";
+echo "<form id='form5' action='insertGames_videos.php' method='POST'><table><tr>";
 echo "<td align='left'><b>Title: </td><td align='right'><input type = 'text' name = 'videoTitle'></td></tr>";
 echo "<tr><td align='left'><b>Length: </td><td align='right'><input type = 'text' name = 'videoLength'></td></tr>";
 echo "<tr><td align='left'><b>Level: </td><td align='right'><input type = 'text' name = 'videoLevel'></td></tr>";
@@ -155,7 +155,7 @@ return false;
 }
 $gamerUsers = $statement6->fetchAll(PDO::FETCH_ASSOC);
 echo "<b>Add Game User";
-echo "<form><table><tr>";
+echo "<form id='form6' action='insertGames_users.php' method='POST'><table><tr>";
 echo "<td align='left'><b>Username: </td><td align='right'><input type = 'text' name = 'usernameGame'></td></tr>";
 echo "<tr><td align='left'><b>Skype Name: </td><td align='right'><input type = 'text' name = 'skypeName'></td></tr>";
 echo "<tr><td align='left'><b>Email: </td><td align='right'><input type = 'text' name = 'email'></td></tr>";
