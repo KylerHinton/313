@@ -31,8 +31,9 @@ try{
         $error_message = $PDOException->getMessage();
         echo $error_message;   
     }
-    $sql2 ="SELECT * FROM games";
-    $statement = $db->prepare($sql2);
+    $sql ="SELECT * FROM games";
+    $statement = $db->prepare($sql);
+    $statement->execute();
  	$gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
  	echo"<html><body style='background-color:limegreen';>";
 	foreach($gamers AS $games)
