@@ -105,7 +105,7 @@ $gamerType = $statement4->fetchAll(PDO::FETCH_ASSOC);
 echo "<b>Add Game Type";
 echo "<form id='form4' action='insertGames_types.php' method='POST'><table><tr>";
 echo "<td align='left'><b>Adventure/Story: </td><td align='right'><input type = 'text' id='advStory' name = 'advStory'></td></tr>";
-echo "<tr><td align='left'><b>Arcade: </td><td align='right'><input type = 'text' id = 'arcade' name = 'arc'></td></tr>";
+echo "<tr><td align='left'><b>Arcade: </td><td align='right'><input type = 'text' id = 'arc' name = 'arc'></td></tr>";
 echo "<tr><td align='left'><b>First Person Shooter: </td><td align='right'><input type = 'text' id='fps' name = 'fps'></td></tr>";
 echo "<tr><td align='left'><b>Real Time Strategy: </td><td align='right'><input type = 'text' id='rts'name = 'rts'></td></tr>";
 echo "<tr><td align='left'><b>Role Playing: </td><td align='right'><input type = 'text' id='rpg name = 'rpg'></td></tr>";
