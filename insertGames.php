@@ -31,11 +31,15 @@ try{
         $error_message = $PDOException->getMessage();
         echo $error_message;   
     }
-    $statement = $db->prepare($sql);
+    $sql2 ="SELECT * FROM games";
+    $statement = $db->prepare($sql2);
  	$gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
 	foreach($gamers AS $games)
 	{
-	echo "<b>ID: </b>".$games['game_id']."<br /><b>Username:</b> ".$games['username']."<br /><b>Game Name: </b>".$games['game_name'].' <br /><b>System:</b> '.$games['system_name']."<br /><b>Hours played:</b> ".$games['hours_played']."<br /><b>Game Finished:</b> ".$games['completed']."<br /><br />";
+	echo "<b>ID: </b>".$games['game_id']."<br /><b>Username:</b> ".$games['username'].
+		"<br /><b>Game Name: </b>".$games['game_name'].' <br /><b>System:</b> '
+		.$games['system_name']."<br /><b>Hours played:</b> ".$games['hours_played'].
+		"<br /><b>Game Finished:</b> ".$games['completed']."<br /><br />";
 	}
 
 ?>
