@@ -34,10 +34,10 @@ echo "<tr><td align='left'><b>Hours Played: </td><td align='right'><input type =
 echo "<tr><td align='left'><b>Game Finished: </td><td align='right'><input type = 'text' id='insGameFinished' name = 'insGameFinished'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gamesPlayed' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
-foreach($gamers AS $games)
+/*foreach($gamers AS $games)
 {
 echo "<b>ID: </b>".$games['game_id']."<br /><b>Username:</b> ".$games['username']."<br /><b>Game Name: </b>".$games['game_name'].' <br /><b>System:</b> '.$games['system_name']."<br /><b>Hours played:</b> ".$games['hours_played']."<br /><b>Game Finished:</b> ".$games['completed']."<br /><br />";
-}
+}*/
 $gameImages = "SELECT * FROM game_images";
 $statement = $db->query($gameImages);
 try
@@ -58,10 +58,10 @@ echo "<tr><td align='left'><b>Name: </td><td align='right'><input type = 'text' 
 echo "<tr><td align='left'><b>NPC: </td><td align='right'><input type = 'text' id='insNPC' name = 'insNPC'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gameImages' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
-foreach($gamerImages AS $game_images)
+/*foreach($gamerImages AS $game_images)
 {
 echo "<b>Level: </b>".$game_images['level']."<br /><b>Name:</b> ".$game_images['name']."<br /><b>NPC: </b>".$game_images['npc']."<br /><br />";
-}
+}*/
 $gameMusic = "SELECT * FROM game_music";
 
 $statement3 = $db->query($gameMusic);
@@ -84,10 +84,10 @@ echo "<tr><td align='left'><b>In-game Location: </td><td align='right'><input ty
 echo "<tr><td align='left'><b>Artists Name: </td><td align='right'><input type = 'text' id='insArtistName' name = 'insArtistName'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gameMusic' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
-foreach($gamerMusic AS $game_music)
+/*foreach($gamerMusic AS $game_music)
 {
 echo "<b>Title: </b>".$game_music['title']."<br /><b>Song Length:</b> ".$game_music['length']."<br /><b>Game Location of Music: </b>".$game_music['ingame_loc'].' <br /><b>Artists Name:</b> '.$game_music['artist_name']."<br /><br />";
-}
+}*/
 $gameType = "SELECT * FROM game_types";
 
 $statement4 = $db->query($gameType);
@@ -111,10 +111,10 @@ echo "<tr><td align='left'><b>Real Time Strategy: </td><td align='right'><input 
 echo "<tr><td align='left'><b>Role Playing: </td><td align='right'><input type = 'text' id='rpg' name = 'rpg'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gameType' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
-foreach($gamerType AS $game_types)
+/*foreach($gamerType AS $game_types)
 {
 echo "<b>ID: </b>".$game_types['user_id']."<br /><b>Adventure/Story:</b> ".$game_types['adventure_story']."<br /><b>Arcade: </b>".$game_types['arcade'].' <br /><b>First Person Shooter:</b> '.$game_types['first_person_shooter']."<br /><b>Real Time Strategy:</b> ".$game_types['real_time_strategy']."<br /><b>Role Playing:</b> ".$game_types['role_playing']."<br /><br />";
-}
+}*/
 $gameVideos = "SELECT * FROM game_videos";
 
 $statement5 = $db->query($gameVideos);
@@ -136,10 +136,10 @@ echo "<tr><td align='left'><b>Length: </td><td align='right'><input type = 'text
 echo "<tr><td align='left'><b>Level: </td><td align='right'><input type = 'text' id='videoTitle' name = 'videoLevel'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gameVideos' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
-foreach($gamerVideos AS $game_videos)
+/*foreach($gamerVideos AS $game_videos)
 {
 echo "<b>Title: </b>".$game_videos['title']."<br /><b>Length:</b> ".$game_videos['length']."<br /><b>Level: </b>".$game_videos['level']."<br /><br />";
-}
+}*/
 $sqlUsers = "SELECT * FROM users";
 
 $statement6 = $db->query($sqlUsers);
@@ -162,10 +162,10 @@ echo "<tr><td align='left'><b>Email: </td><td align='right'><input type = 'text'
 echo "<tr><td align='left'><b>Created On: </td><td align='right'><input type = 'text' id='createdOn' name = 'createdOn'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='userCreation' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
-foreach($gamerUsers AS $users)
+/*foreach($gamerUsers AS $users)
 {
 echo "<b>User ID: </b>".$users['user_id']."<br /><b>Username:</b> ".$users['username']."<br /><b>Skype Name: </b>".$users['skype_name'].' <br /><b>Email:</b> '.$users['email']."<br /><b>Created On:</b> ".$users['create_date']."<br /><br />";
-}
+}*/
 echo "<div style='background-color:beige;border:15px solid;border-color:black; text-align:center; font-family:fantasy;color:blue; width:400px; margin:auto;'>";
 	echo "<form action='survey.php' method='post' name='survey' id='myForm' style='text-align:left;'>";
     echo "<br/>What is your favorite type of game?<br/>";

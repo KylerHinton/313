@@ -33,6 +33,7 @@ try{
     $statement->execute();
  	$gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
  	echo"<html><body style='background-color:aqua';>";
+ 	echo"<h2><a href = 'database.php'><p>Enter another item</a></h2>";
 	foreach($gamers AS $game_videos)
 	{
 		echo "<b>Title: </b>".$game_videos['title']."<br /><b>Length:</b> ".$game_videos['length']."<br /><b>Level: </b>".$game_videos['level']."<br /><br />";
