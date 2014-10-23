@@ -156,10 +156,10 @@ return false;
 $gamerUsers = $statement6->fetchAll(PDO::FETCH_ASSOC);
 echo "<b>Add Game User";
 echo "<form id='form6' action='insertGames_users.php' method='POST'><table><tr>";
-echo "<td align='left'><b>Username: </td><td align='right'><input type = 'text' name = 'usernameGame'></td></tr>";
-echo "<tr><td align='left'><b>Skype Name: </td><td align='right'><input type = 'text' name = 'skypeName'></td></tr>";
-echo "<tr><td align='left'><b>Email: </td><td align='right'><input type = 'text' name = 'email'></td></tr>";
-echo "<tr><td align='left'><b>Created On: </td><td align='right'><input type = 'text' name = 'createdOn'></td></tr>";
+echo "<td align='left'><b>Username: </td><td align='right'><input type = 'text' id='usernameGame' name = 'usernameGame'></td></tr>";
+echo "<tr><td align='left'><b>Skype Name: </td><td align='right'><input type = 'text' id='skypeName' name = 'skypeName'></td></tr>";
+echo "<tr><td align='left'><b>Email: </td><td align='right'><input type = 'text' id='email' name = 'email'></td></tr>";
+echo "<tr><td align='left'><b>Created On: </td><td align='right'><input type = 'text' id='createdOn' name = 'createdOn'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='userCreation' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
 foreach($gamerUsers AS $users)
