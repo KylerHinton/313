@@ -131,9 +131,9 @@ return false;
 $gamerVideos = $statement5->fetchAll(PDO::FETCH_ASSOC);
 echo "<b>Add Game Videos";
 echo "<form id='form5' action='insertGames_videos.php' method='POST'><table><tr>";
-echo "<td align='left'><b>Title: </td><td align='right'><input type = 'text' name = 'videoTitle'></td></tr>";
-echo "<tr><td align='left'><b>Length: </td><td align='right'><input type = 'text' name = 'videoLength'></td></tr>";
-echo "<tr><td align='left'><b>Level: </td><td align='right'><input type = 'text' name = 'videoLevel'></td></tr>";
+echo "<td align='left'><b>Title: </td><td align='right'><input type = 'text' id='videoTitle' name = 'videoTitle'></td></tr>";
+echo "<tr><td align='left'><b>Length: </td><td align='right'><input type = 'text' id ='videoLength' name = 'videoLength'></td></tr>";
+echo "<tr><td align='left'><b>Level: </td><td align='right'><input type = 'text' id='videoTitle' name = 'videoLevel'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gameVideos' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
 foreach($gamerVideos AS $game_videos)
