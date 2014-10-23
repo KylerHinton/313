@@ -33,6 +33,7 @@ try{
     $statement->execute();
  	$gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
  	echo"<html><body style='background-color:olive';>";
+ 	echo"<h2><a href = 'database.php'><p>Enter another item</a></h2>";
 	foreach($gamers AS $game_music)
 	{
 	echo "<b>Title: </b>".$game_music['title']."<br /><b>Song Length:</b> ".$game_music['length']."<br /><b>Game Location of Music: </b>".$game_music['ingame_loc'].' <br /><b>Artists Name:</b> '.$game_music['artist_name']."<br /><br />";

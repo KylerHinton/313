@@ -36,6 +36,7 @@ try{
     $statement->execute();
  	$gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
  	echo"<html><body style='background-color:limegreen';>";
+ 	echo"<h2><a href = 'database.php'><p>Enter another item</a></h2>";
 	foreach($gamers AS $games)
 	{
 
