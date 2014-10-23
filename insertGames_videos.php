@@ -20,7 +20,7 @@ try{
 	$length = $_POST['videoLength'];
 
 	$statement->bindParam(':level', $level);
-	$statement->bindParam(':length', $lenght);
+	$statement->bindParam(':length', $length);
 	$statement->bindParam(':title', $title);
 
 	$statement->execute();
