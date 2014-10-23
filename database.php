@@ -108,7 +108,7 @@ echo "<td align='left'><b>Adventure/Story: </td><td align='right'><input type = 
 echo "<tr><td align='left'><b>Arcade: </td><td align='right'><input type = 'text' id = 'arc' name = 'arc'></td></tr>";
 echo "<tr><td align='left'><b>First Person Shooter: </td><td align='right'><input type = 'text' id='fps' name = 'fps'></td></tr>";
 echo "<tr><td align='left'><b>Real Time Strategy: </td><td align='right'><input type = 'text' id='rts'name = 'rts'></td></tr>";
-echo "<tr><td align='left'><b>Role Playing: </td><td align='right'><input type = 'text' id='rpg name = 'rpg'></td></tr>";
+echo "<tr><td align='left'><b>Role Playing: </td><td align='right'><input type = 'text' id='rpg' name = 'rpg'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gameType' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
 foreach($gamerType AS $game_types)
