@@ -12,17 +12,17 @@ catch(PDOException $ex){
 
 try{
 
-	$sql = 'INSERT INTO game_music(artist_name, ingame_loc, length, title) VALUES(:level, :name, :npc, :title)';
+	$sql = 'INSERT INTO game_music(artist_name, ingame_loc, length, title) VALUES(:artist_name, :ingame_loc, :length, :title)';
 
 	$statement = $db->prepare($sql);
 	$artist_name = $_POST['insArtistName'];
-	$insGameLoc = $_POST['insGameLoc'];
+	$ingame_loc = $_POST['insGameLoc'];
 	$length = $_POST['insMusicLength'];
 	$title = $_POST['insMusicTitle'];
-	$statement->bindParam(':level', $level);
-	$statement->bindParam(':name', $name);
-	$statement->bindParam(':npc', $npc);
-
+	$statement->bindParam(':artist_name', $artist_name);
+	$statement->bindParam(':ingame_loc', $ingame_loc);
+	$statement->bindParam(':length', $length);
+	$statement->bindParam(':title', $title);
 	$statement->execute();
 	} catch (Exception $PDOException) { 
         $error_message = $PDOException->getMessage();
