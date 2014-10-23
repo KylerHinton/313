@@ -78,10 +78,10 @@ return false;
 $gamerMusic = $statement3->fetchAll(PDO::FETCH_ASSOC);
 echo "<b>Add Game Music";
 echo "<form id='form3' action='insertGames_music.php' method='POST'><table><tr>";
-echo "<td align='left'><b>Title: </td><td align='right'><input type = 'text' name = 'musicTitle'></td></tr>";
-echo "<tr><td align='left'><b>Length: </td><td align='right'><input type = 'text' name = 'musicLength'></td></tr>";
-echo "<tr><td align='left'><b>In-game Location: </td><td align='right'><input type = 'text' name = 'gameLoc'></td></tr>";
-echo "<tr><td align='left'><b>Artists Name: </td><td align='right'><input type = 'text' name = 'artistName'></td></tr>";
+echo "<td align='left'><b>Title: </td><td align='right'><input type = 'text' name = 'insMusicTitle'></td></tr>";
+echo "<tr><td align='left'><b>Length: </td><td align='right'><input type = 'text' name = 'insMusicLength'></td></tr>";
+echo "<tr><td align='left'><b>In-game Location: </td><td align='right'><input type = 'text' name = 'insGameLoc'></td></tr>";
+echo "<tr><td align='left'><b>Artists Name: </td><td align='right'><input type = 'text' name = 'insArtistName'></td></tr>";
 echo"<tr><td align='left'><input type='submit' name='gameMusic' value='Submit'></td></tr><br/><br/>";
 echo "</table></form></b>";
 foreach($gamerMusic AS $game_music)
