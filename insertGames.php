@@ -31,6 +31,7 @@ try{
         $error_message = $PDOException->getMessage();
         echo $error_message;   
     }
+    $statement = $db->prepare($sql);
  	$gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
 	foreach($gamers AS $game)
 	{
