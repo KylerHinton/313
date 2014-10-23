@@ -27,13 +27,14 @@ try{
 	$statement->bindParam(':completed', $completed);
 
 	$statement->execute();
+	} catch (Exception $PDOException) { 
+        $error_message = $PDOException->getMessage();
+        echo $error_message;   
+    }
  	$gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
 	foreach($gamers AS $game)
 	{
 	echo "<b>ID: </b>".$game['game_id']."<br /><b>Username:</b> ".$game['username']."<br /><b>Game Name: </b>".$game['game_name'].' <br /><b>System:</b> '.$game['system_name']."<br /><b>Hours played:</b> ".$game['hours_played']."<br /><b>Game Finished:</b> ".$game['completed']."<br /><br />";
 	}
-} catch (Exception $PDOException) { 
-        $error_message = $PDOException->getMessage();
-        echo $error_message;   
-    }
+
 ?>
