@@ -28,7 +28,9 @@ try{
 
 	$statement->execute();
  	$gamers = $statement->fetchAll(PDO::FETCH_ASSOC);
-	foreach($gamers AS $games)
+	foreach($gamers AS $game)
 	{
-	echo "<b>ID: </b>".$games['game_id']."<br /><b>Username:</b> ".$games['username']."<br /><b>Game Name: </b>".$games['game_name'].' <br /><b>System:</b> '.$games['system_name']."<br /><b>Hours played:</b> ".$games['hours_played']."<br /><b>Game Finished:</b> ".$games['completed']."<br /><br />";
+	echo "<b>ID: </b>".$game['game_id']."<br /><b>Username:</b> ".$game['username']."<br /><b>Game Name: </b>".$game['game_name'].' <br /><b>System:</b> '.$game['system_name']."<br /><b>Hours played:</b> ".$game['hours_played']."<br /><b>Game Finished:</b> ".$game['completed']."<br /><br />";
 	}
+
+?>
