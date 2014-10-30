@@ -6,7 +6,7 @@ function connect()
 	$password = "password";
 	try
 	{
-   		$db = new PDO("mysql:host=localhost;dbname=signUp", $user, $password);
+   		$db = new PDO("mysql:host=127.3.240.130:3306;dbname=signUp", $user, $password);
 		return $db;
 	}
 	catch(PDOException $ex)
