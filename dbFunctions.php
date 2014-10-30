@@ -47,7 +47,7 @@ function getData($username, $password)
         session_start();
         $_SESSION['userID'] = $login_in['id'];    
         $_SESSION['user'] = $log_in['username'];  
-        header('Location: index2.php');
+        header('Location: database.php');
     }   
     else
     {

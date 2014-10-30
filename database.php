@@ -1,4 +1,8 @@
-<?php 
+<?php
+    session_start();
+    if(isset($_SESSION['user']))
+    {
+        echo "Welcome, ".$_SESSION['user']."<br>";
 $user = "php";
 $password = "password";
 try{
@@ -190,4 +194,23 @@ echo "<div style='background-color:beige;border:15px solid;border-color:black; t
   	echo"<input type='submit' name='submit' value='Submit'>"; 
 	echo "<br/></div>";
 echo "</body></html>";
-?>​
+        //header('Location: database.php');
+    }
+    else
+    {
+        header('Location:log_in.php');
+    }
+?>
+
+<!doctype html>
+<html>
+    <head>
+        
+    </head>
+    
+    <body>
+        
+       
+    </body>
+    
+</html>
