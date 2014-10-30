@@ -3,7 +3,7 @@
     if(isset($_SESSION['user']))
     {
         echo "Welcome, ".$_SESSION['user']."<br>";
-        header('Location: database.php');
+      //  header('Location: database.php');
     }
     else
     {
